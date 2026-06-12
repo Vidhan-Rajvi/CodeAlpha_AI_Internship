@@ -100,6 +100,21 @@ English, Hindi, Gujarati, French, German, Spanish, Japanese, Chinese, Russian, A
 
 ---
 
+## Screenshots
+
+### Home Page
+![Home](screenshots/home.png)
+
+### Translation Result
+![Translation](screenshots/translation.png)
+
+### Translation History
+![History](screenshots/history.png)
+
+### Dark Mode
+![Dark Mode](screenshots/darkmode.png)
+
+
 ## Author
 
 Vidhan Rajvi  

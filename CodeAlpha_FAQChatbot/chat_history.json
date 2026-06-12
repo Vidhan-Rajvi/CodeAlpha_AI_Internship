@@ -54,5 +54,149 @@
     ],
     "found": true,
     "emoji": "👋"
+  },
+  {
+    "role": "user",
+    "text": "What is artificial intelligence?",
+    "timestamp": "12 Jun 2026, 15:37"
+  },
+  {
+    "role": "bot",
+    "text": "Artificial Intelligence (AI) is the simulation of human intelligence processes by computer systems, including learning, reasoning, problem-solving, perception, and language understanding. AI can be categorized as narrow AI (designed for a specific task) or general AI (able to perform any intellectual task a human can).",
+    "timestamp": "12 Jun 2026, 15:37",
+    "confidence": 69.6,
+    "category": "AI and Machine Learning",
+    "matched_question": "What is artificial intelligence?",
+    "suggestions": [],
+    "found": true,
+    "emoji": "🤖"
+  },
+  {
+    "role": "user",
+    "text": "What is a relational database?",
+    "timestamp": "12 Jun 2026, 15:38"
+  },
+  {
+    "role": "bot",
+    "text": "I couldn't find a precise answer to your question. Try rephrasing, check other categories, or select one of the suggested questions below.",
+    "timestamp": "12 Jun 2026, 15:38",
+    "confidence": 0.0,
+    "category": "",
+    "matched_question": "",
+    "suggestions": [
+      "What is a relational database?",
+      "What is the difference between SQL and NoSQL?",
+      "What is SQL?"
+    ],
+    "found": false,
+    "emoji": "🤔"
+  },
+  {
+    "role": "user",
+    "text": "What is artificial intelligence?",
+    "timestamp": "12 Jun 2026, 15:38"
+  },
+  {
+    "role": "bot",
+    "text": "Artificial Intelligence (AI) is the simulation of human intelligence processes by computer systems, including learning, reasoning, problem-solving, perception, and language understanding. AI can be categorized as narrow AI (designed for a specific task) or general AI (able to perform any intellectual task a human can).",
+    "timestamp": "12 Jun 2026, 15:38",
+    "confidence": 69.6,
+    "category": "AI and Machine Learning",
+    "matched_question": "What is artificial intelligence?",
+    "suggestions": [],
+    "found": true,
+    "emoji": "🤖"
+  },
+  {
+    "role": "user",
+    "text": "What is DevOps?",
+    "timestamp": "12 Jun 2026, 15:39"
+  },
+  {
+    "role": "bot",
+    "text": "I couldn't find a precise answer to your question. Try rephrasing, check other categories, or select one of the suggested questions below.",
+    "timestamp": "12 Jun 2026, 15:39",
+    "confidence": 12.0,
+    "category": "",
+    "matched_question": "",
+    "suggestions": [
+      "What is DevOps?",
+      "What is Prometheus in DevOps?",
+      "What is Terraform in DevOps?"
+    ],
+    "found": false,
+    "emoji": "🤔"
+  },
+  {
+    "role": "user",
+    "text": "What is Git?",
+    "timestamp": "12 Jun 2026, 15:39"
+  },
+  {
+    "role": "bot",
+    "text": "I couldn't find a precise answer to your question. Try rephrasing, check other categories, or select one of the suggested questions below.",
+    "timestamp": "12 Jun 2026, 15:39",
+    "confidence": 0.0,
+    "category": "",
+    "matched_question": "",
+    "suggestions": [
+      "What is the difference between git fetch and git pull?",
+      "What is the difference between Git and GitHub?",
+      "What is Git?"
+    ],
+    "found": false,
+    "emoji": "🤔"
+  },
+  {
+    "role": "user",
+    "text": "is GIT and GitHub",
+    "timestamp": "12 Jun 2026, 15:40"
+  },
+  {
+    "role": "bot",
+    "text": "Git is a local command-line tool used for version control (tracking code history). GitHub is an online service that hosts Git repositories in the cloud and provides collaboration features. Git runs locally, whereas GitHub is web-based.",
+    "timestamp": "12 Jun 2026, 15:40",
+    "confidence": 61.6,
+    "category": "Git & Version Control",
+    "matched_question": "What is the difference between Git and GitHub?",
+    "suggestions": [],
+    "found": true,
+    "emoji": "📱"
+  },
+  {
+    "role": "user",
+    "text": "Hello",
+    "timestamp": "12 Jun 2026, 15:45"
+  },
+  {
+    "role": "bot",
+    "text": "Hello! I am your AI FAQ Assistant. How can I help you today? You can ask me technical questions, search for topics using the search bar, or choose from the categories on the sidebar!",
+    "timestamp": "12 Jun 2026, 15:45",
+    "confidence": 100.0,
+    "category": "Small Talk",
+    "matched_question": "Greeting",
+    "suggestions": [
+      "What is artificial intelligence?",
+      "What is cloud computing?",
+      "What is cybersecurity?"
+    ],
+    "found": true,
+    "emoji": "👋"
+  },
+  {
+    "role": "user",
+    "text": "Who Invented Linx?",
+    "timestamp": "12 Jun 2026, 15:45"
+  },
+  {
+    "role": "bot",
+    "text": "Linus Torvalds, a Finnish-American software engineer, invented Linux in 1991.",
+    "timestamp": "12 Jun 2026, 15:45",
+    "confidence": 51.3,
+    "category": "Linux",
+    "matched_question": "Who Invented Linux?",
+    "suggestions": [],
+    "found": true,
+    "emoji": "🐧"
   }
 ]

@@ -131,6 +131,22 @@ User Input
 
 ---
 
+## Screenshots
+
+### Chat Interface
+![Chat UI](screenshots/chatui.png)
+
+### AI Response
+![Response](screenshots/response.png)
+
+### Category Filter
+![Category](screenshots/category.png)
+
+### Admin Panel
+![Admin Panel](screenshots/admin.png)
+
+
+
 ## Author
 
 Vidhan Rajvi 

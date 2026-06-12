@@ -1108,5 +1108,11 @@
     "question": "What is the difference between git fetch and git pull?",
     "answer": "git fetch downloads new commits, files, and refs from a remote repository to your local repository but does not modify your working files. git pull does a 'git fetch' followed immediately by a 'git merge' to bring your current local branch up-to-date.",
     "id": 185
+  },
+  {
+    "id": 186,
+    "category": "Linux",
+    "question": "Who Invented Linux?",
+    "answer": "Linus Torvalds, a Finnish-American software engineer, invented Linux in 1991."
   }
 ]
