@@ -12,6 +12,19 @@ Welcome to my CodeAlpha Artificial Intelligence Internship repository. This repo
 
 ---
 
+# 📸 Project Preview
+
+## 🌐 Language Translation Tool
+
+![Language Translator](screenshots/translator-preview.png)
+
+---
+
+## 💬 AI FAQ Chatbot
+
+![FAQ Chatbot](screenshots/chatbot-preview.png)
+
+
 ## 🚀 Completed Projects
 
 ### 🌐 Task 1: Language Translation Tool
