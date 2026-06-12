@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Translator — CodeAlpha</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+
+  <!-- ── NAVBAR ────────────────────────────────────────────────────── -->
+  <nav class="navbar navbar-expand-lg glass-nav">
+    <div class="container-xl">
+      <span class="navbar-brand fw-bold fs-5">
+        <i class="bi bi-translate me-2 text-primary"></i>Language Translator
+      </span>
+      <div class="ms-auto d-flex align-items-center gap-3">
+        <span class="badge bg-primary-soft text-primary" id="navCountBadge">
+          <i class="bi bi-database me-1"></i>{{ count }} Translations
+        </span>
+        <button class="btn btn-icon" id="themeToggle" title="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────────────────────────────── -->
+  <div class="hero-section text-center py-5">
+    <div class="container">
+      <div class="globe-icon mb-3">🌍</div>
+      <h1 class="hero-title">Translate <span class="gradient-text">Anything</span></h1>
+      <p class="hero-sub text-muted">20 languages · Voice Input · Text To Speech · Copy Translated Text </p>
+    </div>
+  </div>
+
+  <!-- ── MAIN CONTENT ───────────────────────────────────────────────── -->
+  <div class="container-xl pb-5">
+
+    <!-- Error Alert -->
+    {% if error %}
+    <div class="alert alert-danger glass-card mb-4 d-flex align-items-center gap-2" role="alert">
+      <i class="bi bi-exclamation-triangle-fill"></i> {{ error }}
+    </div>
+    {% endif %}
+
+    <!-- ── TRANSLATOR CARD ─────────────────────────────────────────── -->
+    <div class="glass-card mb-4">
+      <form method="POST" id="translateForm">
+
+        <!-- Language Bar -->
+        <div class="lang-bar d-flex align-items-center gap-2 mb-3">
+          <select class="form-select lang-select" name="source" id="sourceSelect">
+            <option value="auto">🔍 Auto Detect</option>
+            {% for name, info in languages.items() %}
+            {% if name != "Auto Detect" %}
+            <option value="{{ info.code }}">{{ info.flag }} {{ name }}</option>
+            {% endif %}
+            {% endfor %}
+          </select>
+
+          <button type="button" class="btn btn-icon swap-btn" onclick="swapLanguages()" title="Swap Languages">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+
+          <select class="form-select lang-select" name="target" id="targetSelect">
+            {% for name, info in languages.items() %}
+            {% if name != "Auto Detect" %}
+            <option value="{{ info.code }}" {% if info.code==target_lang %}selected{% endif %}>
+              {{ info.flag }} {{ name }}
+            </option>
+            {% endif %}
+            {% endfor %}
+          </select>
+        </div>
+
+        <!-- Text Areas -->
+        <div class="row g-3">
+          <!-- Input -->
+          <div class="col-12 col-lg-6">
+            <div class="textarea-wrapper">
+              <textarea class="form-control custom-textarea" name="text" id="inputText"
+                placeholder="Enter text to translate…" maxlength="5000"
+                required>{% if request.method == 'POST' %}{{ request.form.get('text','') }}{% endif %}</textarea>
+              <div class="textarea-actions">
+                <span class="char-count" id="charCount">0 / 5000</span>
+                <button type="button" class="btn btn-sm btn-ghost" onclick="clearInput()" title="Clear">
+                  <i class="bi bi-x-circle"></i>
+                </button>
+                <button type="button" class="btn btn-sm btn-ghost" onclick="startVoiceInput()" title="Voice Input"
+                  id="voiceBtn">
+                  <i class="bi bi-mic-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Output -->
+          <div class="col-12 col-lg-6">
+            <div class="textarea-wrapper output-wrapper">
+              <div class="custom-textarea output-area" id="outputArea">
+                {% if translated_text %}
+                <span id="translatedText">{{ translated_text }}</span>
+                {% else %}
+                <span class="placeholder-text">Translation will appear here…</span>
+                {% endif %}
+              </div>
+              <div class="textarea-actions">
+                {% if translated_text %}
+                <button type="button" class="btn btn-sm btn-ghost" onclick="copyText()" title="Copy">
+                  <i class="bi bi-clipboard"></i>
+                </button>
+                <button type="button" class="btn btn-sm btn-ghost" onclick="speakText()" title="Speak" id="speakBtn">
+                  <i class="bi bi-volume-up-fill"></i>
+                </button>
+                <button type="button" class="btn btn-sm btn-ghost" onclick="downloadTxt()" title="Download TXT">
+                  <i class="bi bi-download"></i>
+                </button>
+                {% endif %}
+              </div>
+            </div>
+            <!-- Hidden TXT download form -->
+            {% if translated_text %}
+            <form id="txtForm" action="/export/txt" method="POST" style="display:none">
+              <input type="hidden" name="text" id="txtContent" value="{{ translated_text }}">
+            </form>
+            {% endif %}
+          </div>
+        </div>
+
+        <!-- Translate Button -->
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-translate">
+            <i class="bi bi-translate me-2"></i>Translate
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- ── TABS: History / Favorites ──────────────────────────────── -->
+    <div class="glass-card">
+
+      <!-- Tab Nav -->
+      <ul class="nav nav-tabs custom-tabs mb-4" id="historyTabs">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#historyTab">
+            <i class="bi bi-clock-history me-1"></i>History
+            <span class="badge bg-primary ms-1" id="historyTabBadge">{{ count }}</span>
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#favoritesTab">
+            <i class="bi bi-star-fill me-1 text-warning"></i>Favorites
+            <span class="badge bg-warning text-dark ms-1" id="favoritesTabBadge">{{ favorites|length }}</span>
+          </button>
+        </li>
+      </ul>
+
+      <!-- Search + Export Bar -->
+      <div class="d-flex flex-wrap gap-2 mb-4">
+        <form method="GET" class="flex-grow-1" style="min-width:200px">
+          <div class="input-group">
+            <span class="input-group-text glass-input-addon"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control glass-input" name="search" placeholder="Search history…"
+              value="{{ search_query }}">
+            {% if search_query %}
+            <a href="/" class="btn btn-outline-secondary">✕</a>
+            {% endif %}
+          </div>
+        </form>
+        <a href="/export/csv" class="btn btn-outline-success btn-sm d-flex align-items-center gap-1">
+          <i class="bi bi-file-earmark-spreadsheet"></i> Export CSV
+        </a>
+        <button type="button" onclick="clearAllHistory()"
+          class="btn btn-outline-danger btn-sm d-flex align-items-center gap-1">
+          <i class="bi bi-trash3"></i> Clear All
+        </button>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="historyTabContent">
+
+        <!-- History Tab -->
+        <div class="tab-pane fade show active" id="historyTab">
+          {% if history %}
+          <div class="history-list" id="historyListContainer">
+            {% for item in history %}
+            <div class="history-card" data-id="{{ item.id }}">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="badge lang-badge">{{ item.source_lang }} → {{ item.target_lang }}</span>
+                <div class="d-flex gap-2 align-items-center">
+                  <button class="btn btn-icon-sm fav-btn" onclick="toggleFavorite('{{ item.id }}', this)"
+                    title="Favorite">
+                    <i class="bi bi-star{% if item in favorites %}-fill text-warning{% endif %}"></i>
+                  </button>
+                  <button class="btn btn-icon-danger-sm delete-btn"
+                    onclick="deleteHistoryItem('{{ item.id }}', this.closest('.history-card'))" title="Delete">
+                    <i class="bi bi-trash3"></i>
+                  </button>
+                  <span class="text-muted small">{{ item.date }}</span>
+                </div>
+              </div>
+              <div class="row g-2">
+                <div class="col-12 col-md-6">
+                  <div class="history-text source-text">{{ item.source_text }}</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="history-text translated-text">{{ item.translated_text }}</div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <div class="empty-state" id="historyEmptyState">
+            <div class="empty-icon">📭</div>
+            <p>No translations yet. Start translating!</p>
+          </div>
+          {% endif %}
+        </div>
+
+        <!-- Favorites Tab -->
+        <div class="tab-pane fade" id="favoritesTab">
+          {% if favorites %}
+          <div class="history-list" id="favoritesListContainer">
+            {% for item in favorites %}
+            <div class="history-card fav-card" data-id="{{ item.id }}">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="badge lang-badge">{{ item.source_lang }} → {{ item.target_lang }}</span>
+                <div class="d-flex gap-2 align-items-center">
+                  <button class="btn btn-icon-danger-sm delete-btn"
+                    onclick="toggleFavorite('{{ item.id }}', this.closest('.history-card'))" title="Remove Favorite">
+                    <i class="bi bi-trash3"></i>
+                  </button>
+                  <span class="text-muted small">{{ item.date }}</span>
+                </div>
+              </div>
+              <div class="row g-2">
+                <div class="col-12 col-md-6">
+                  <div class="history-text source-text">{{ item.source_text }}</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="history-text translated-text">{{ item.translated_text }}</div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <div class="empty-state" id="favoritesEmptyState">
+            <div class="empty-icon">⭐</div>
+            <p>No favorites yet. Star a translation to save it here!</p>
+          </div>
+          {% endif %}
+        </div>
+
+      </div>
+    </div>
+    <!-- end tabs card -->
+
+  </div>
+  <!-- end container -->
+
+  <!-- ── TOAST ──────────────────────────────────────────────────────── -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast align-items-center border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body fw-semibold" id="toastMsg">Copied!</div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

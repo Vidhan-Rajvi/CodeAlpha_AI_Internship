@@ -1,0 +1,65 @@
+[
+    {
+        "id": "20260612141213450151",
+        "date": "12 Jun 2026, 14:12",
+        "source_text": "even though we were going through an ill will takes should be the low cause baby I will die for you",
+        "translated_text": "भले ही हम दुर्भावना से गुजर रहे थे, लेकिन यह कम कारण होना चाहिए बेबी, मैं तुम्हारे लिए मर जाऊंगा",
+        "source_lang": "auto",
+        "target_lang": "hi",
+        "favorited": false
+    },
+    {
+        "id": "20260611010655151988",
+        "date": "11 Jun 2026, 01:06",
+        "source_text": "I am the king!",
+        "translated_text": "أنا الملك!",
+        "source_lang": "auto",
+        "target_lang": "ar",
+        "favorited": false
+    },
+    {
+        "id": "20260611005159950888",
+        "date": "11 Jun 2026, 00:51",
+        "source_text": "我命由我不由天！",
+        "translated_text": "My destiny is up to me!",
+        "source_lang": "auto",
+        "target_lang": "en",
+        "favorited": false
+    },
+    {
+        "id": "20260611002122919044",
+        "date": "11 Jun 2026, 00:21",
+        "source_text": "so baby pull me closer in the backseat of your Rover that I know you can't afford up by the day to on your shoulder put that she tried of the corner of the matrix that you stole from your roommate back in border be and ever getting older",
+        "translated_text": "તેથી બેબી મને તમારા રોવરની પાછળની સીટમાં નજીક ખેંચો કે હું જાણું છું કે તમે તમારા ખભા પર દિવસ સુધી ઉઠાવી શકતા નથી કે તેણીએ મેટ્રિક્સના ખૂણામાંથી પ્રયાસ કર્યો હતો કે જે તમે તમારા રૂમમેટ પાસેથી સરહદ પર પાછા ફર્યા છો અને હંમેશા વૃદ્ધ થાઓ છો.",
+        "source_lang": "auto",
+        "target_lang": "gu",
+        "favorited": false
+    },
+    {
+        "id": "20260610234943695319",
+        "date": "10 Jun 2026, 23:49",
+        "source_text": "Hello What are you doing?",
+        "translated_text": "Bonjour, que fais-tu ?",
+        "source_lang": "auto",
+        "target_lang": "fr",
+        "favorited": false
+    },
+    {
+        "id": "20260610234404690739",
+        "date": "10 Jun 2026, 23:44",
+        "source_text": "How are you?",
+        "translated_text": "¿Cómo estás?",
+        "source_lang": "auto",
+        "target_lang": "es",
+        "favorited": false
+    },
+    {
+        "id": "20260610234303890410",
+        "date": "10 Jun 2026, 23:43",
+        "source_text": "Ça va très bien.",
+        "translated_text": "It's going very well.",
+        "source_lang": "auto",
+        "target_lang": "en",
+        "favorited": false
+    }
+]

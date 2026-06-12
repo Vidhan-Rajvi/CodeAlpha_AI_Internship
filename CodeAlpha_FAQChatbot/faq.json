@@ -1,0 +1,1112 @@
+[
+  {
+    "id": 1,
+    "category": "Python Programming",
+    "question": "What is Python?",
+    "answer": "Python is a high-level, interpreted programming language known for its simplicity and readability. Created by Guido van Rossum in 1991, it supports multiple paradigms including procedural, object-oriented, and functional programming. It is widely used in web development, data science, AI, and automation."
+  },
+  {
+    "id": 2,
+    "category": "Python Programming",
+    "question": "What is the difference between a list and a tuple in Python?",
+    "answer": "Lists are mutable (changeable) sequences defined with square brackets [], while tuples are immutable (unchangeable) sequences defined with parentheses (). Use tuples for fixed data that should not change, and lists for data that needs modification. Tuples are also slightly faster and can be used as dictionary keys."
+  },
+  {
+    "id": 3,
+    "category": "Python Programming",
+    "question": "What are Python decorators?",
+    "answer": "Decorators are functions that modify or extend the behavior of other functions without permanently changing them. They use the @symbol syntax and are commonly used for logging, authentication, caching, and access control. Example: @staticmethod, @property, and custom decorators using @wraps."
+  },
+  {
+    "id": 4,
+    "category": "Python Programming",
+    "question": "What is a virtual environment in Python?",
+    "answer": "A virtual environment is an isolated Python environment that allows you to install packages independently for each project, preventing conflicts between different project dependencies. Create one using: python -m venv venv, then activate with venv\\Scripts\\activate on Windows or source venv/bin/activate on Mac/Linux."
+  },
+  {
+    "id": 5,
+    "category": "Python Programming",
+    "question": "What is pip in Python?",
+    "answer": "pip is Python's official package installer. It allows you to install, update, and remove Python packages from the Python Package Index (PyPI). Common commands: pip install package_name, pip uninstall package_name, pip list, and pip freeze > requirements.txt to save project dependencies."
+  },
+  {
+    "id": 6,
+    "category": "Python Programming",
+    "question": "What are lambda functions in Python?",
+    "answer": "Lambda functions are small, anonymous functions defined using the lambda keyword. They can take any number of arguments but can only have one expression. They are often used with map(), filter(), and sorted(). Example: square = lambda x: x**2 — calling square(5) returns 25."
+  },
+  {
+    "id": 7,
+    "category": "Python Programming",
+    "question": "What is exception handling in Python?",
+    "answer": "Exception handling uses try, except, else, and finally blocks to catch and handle errors gracefully, preventing your program from crashing. The try block contains code that might fail, except catches specific errors, else runs if no exception occurred, and finally always executes for cleanup."
+  },
+  {
+    "id": 8,
+    "category": "Python Programming",
+    "question": "What is object-oriented programming in Python?",
+    "answer": "OOP is a programming paradigm that organizes code into classes and objects. Python supports OOP with features like inheritance (child classes inheriting from parent), encapsulation (hiding internal data), polymorphism (same method behaving differently), and abstraction (hiding complex implementation details)."
+  },
+  {
+    "id": 9,
+    "category": "Python Programming",
+    "question": "What is a Python dictionary?",
+    "answer": "A dictionary is an unordered collection of key-value pairs defined with curly braces {}. Keys must be unique and immutable (strings, numbers, tuples), while values can be any data type. Dictionaries provide fast O(1) average-time lookup by key. Example: person = {'name': 'Alice', 'age': 25}"
+  },
+  {
+    "id": 10,
+    "category": "Python Programming",
+    "question": "What is list comprehension in Python?",
+    "answer": "List comprehension is a concise, Pythonic way to create lists using a single line of code. Syntax: [expression for item in iterable if condition]. It is generally faster than a for loop. Example: squares = [x**2 for x in range(10)] creates a list of squares from 0 to 81."
+  },
+  {
+    "id": 11,
+    "category": "Cloud Computing",
+    "question": "What is cloud computing?",
+    "answer": "Cloud computing is the delivery of computing services — including servers, storage, databases, networking, software, and analytics — over the internet to offer faster innovation, flexible resources, and economies of scale. You typically pay only for the cloud services you use, helping lower operating costs."
+  },
+  {
+    "id": 12,
+    "category": "Cloud Computing",
+    "question": "What is Amazon Web Services AWS?",
+    "answer": "AWS is Amazon's comprehensive cloud platform offering over 200 fully featured services including computing (EC2), storage (S3), databases (RDS), machine learning (SageMaker), and content delivery (CloudFront). It is the world's most widely adopted cloud platform, used by millions of companies worldwide."
+  },
+  {
+    "id": 13,
+    "category": "Cloud Computing",
+    "question": "What is Microsoft Azure?",
+    "answer": "Microsoft Azure is a cloud computing platform offering more than 200 products and services, including virtual machines, AI tools, databases, and DevOps solutions. It has strong integration with Microsoft products like Office 365 and Active Directory, making it popular for enterprise environments."
+  },
+  {
+    "id": 14,
+    "category": "Cloud Computing",
+    "question": "What is Google Cloud Platform GCP?",
+    "answer": "Google Cloud Platform (GCP) is Google's suite of cloud computing services offering computing, data storage, data analytics, and machine learning. It runs on the same infrastructure that Google uses internally. GCP is especially known for its BigQuery data analytics and TensorFlow AI capabilities."
+  },
+  {
+    "id": 15,
+    "category": "Cloud Computing",
+    "question": "What is IaaS Infrastructure as a Service?",
+    "answer": "IaaS (Infrastructure as a Service) provides virtualized computing resources over the internet. You rent IT infrastructure — servers, virtual machines, storage, networks, and operating systems — while the cloud provider manages the physical hardware. AWS EC2, Azure Virtual Machines are IaaS examples."
+  },
+  {
+    "id": 16,
+    "category": "Cloud Computing",
+    "question": "What is PaaS Platform as a Service?",
+    "answer": "PaaS (Platform as a Service) provides a platform allowing developers to build, run, and manage applications without managing the underlying infrastructure. The provider handles servers, storage, and networking. Examples include Google App Engine, Heroku, and Microsoft Azure App Service."
+  },
+  {
+    "id": 17,
+    "category": "Cloud Computing",
+    "question": "What is SaaS Software as a Service?",
+    "answer": "SaaS (Software as a Service) delivers software applications over the internet on a subscription basis. You access the application through a web browser without installing or maintaining it. Popular examples include Google Workspace, Salesforce, Microsoft 365, Zoom, and Dropbox."
+  },
+  {
+    "id": 18,
+    "category": "Cloud Computing",
+    "question": "What is Docker?",
+    "answer": "Docker is an open platform for developing, shipping, and running applications in isolated environments called containers. Containers package your application code together with all its dependencies, ensuring it runs consistently across different environments from development to production."
+  },
+  {
+    "id": 19,
+    "category": "Cloud Computing",
+    "question": "What is Kubernetes?",
+    "answer": "Kubernetes (K8s) is an open-source container orchestration platform that automates deployment, scaling, and management of containerized applications across clusters. It handles tasks like load balancing, self-healing, rolling updates, and secret management for production container workloads."
+  },
+  {
+    "id": 20,
+    "category": "Cloud Computing",
+    "question": "What is serverless computing?",
+    "answer": "Serverless computing lets you run code without provisioning or managing servers. The cloud provider dynamically manages resource allocation and you only pay for the compute time consumed. AWS Lambda, Azure Functions, and Google Cloud Functions are popular serverless platforms."
+  },
+  {
+    "id": 21,
+    "category": "AI and Machine Learning",
+    "question": "What is artificial intelligence?",
+    "answer": "Artificial Intelligence (AI) is the simulation of human intelligence processes by computer systems, including learning, reasoning, problem-solving, perception, and language understanding. AI can be categorized as narrow AI (designed for a specific task) or general AI (able to perform any intellectual task a human can)."
+  },
+  {
+    "id": 22,
+    "category": "AI and Machine Learning",
+    "question": "What is machine learning?",
+    "answer": "Machine learning (ML) is a subset of AI that enables systems to automatically learn and improve from experience without being explicitly programmed. Instead of rule-based programming, ML algorithms build mathematical models from training data to make predictions or decisions on new data."
+  },
+  {
+    "id": 23,
+    "category": "AI and Machine Learning",
+    "question": "What is deep learning?",
+    "answer": "Deep learning is a subset of machine learning that uses artificial neural networks with many layers (deep networks) to progressively extract higher-level features from raw data. It has enabled breakthroughs in image recognition, speech recognition, and natural language processing."
+  },
+  {
+    "id": 24,
+    "category": "AI and Machine Learning",
+    "question": "What is a neural network?",
+    "answer": "A neural network is a computing system inspired by the biological neural networks in animal brains. It consists of interconnected nodes (neurons) organized in layers — an input layer, one or more hidden layers, and an output layer — that process information to recognize patterns and make decisions."
+  },
+  {
+    "id": 25,
+    "category": "AI and Machine Learning",
+    "question": "What is supervised learning?",
+    "answer": "Supervised learning is a type of machine learning where the model is trained on labeled data — pairs of inputs and correct outputs. The algorithm learns to map inputs to outputs and is used for classification (categorizing data) and regression (predicting continuous values) tasks."
+  },
+  {
+    "id": 26,
+    "category": "AI and Machine Learning",
+    "question": "What is unsupervised learning?",
+    "answer": "Unsupervised learning finds hidden patterns in unlabeled data without predefined correct answers. Common techniques include clustering (grouping similar data — like K-Means), dimensionality reduction (like PCA), and association rule learning. It's used for customer segmentation and anomaly detection."
+  },
+  {
+    "id": 27,
+    "category": "AI and Machine Learning",
+    "question": "What is natural language processing?",
+    "answer": "Natural Language Processing (NLP) is the branch of AI that enables computers to understand, interpret, and generate human language. It powers applications like chatbots, machine translation, sentiment analysis, text summarization, speech recognition, and voice assistants like Siri and Alexa."
+  },
+  {
+    "id": 28,
+    "category": "AI and Machine Learning",
+    "question": "What is TensorFlow?",
+    "answer": "TensorFlow is an open-source machine learning framework developed by Google Brain. It provides tools for building and training neural networks efficiently using data flow graphs. It supports deployment on CPUs, GPUs, and TPUs, and is widely used for both research and production ML applications."
+  },
+  {
+    "id": 29,
+    "category": "AI and Machine Learning",
+    "question": "What is overfitting in machine learning?",
+    "answer": "Overfitting occurs when a model learns the training data too well — including noise and random fluctuations — resulting in poor performance on new, unseen data. Prevention techniques include: cross-validation, regularization (L1/L2), dropout layers, early stopping, and collecting more training data."
+  },
+  {
+    "id": 30,
+    "category": "AI and Machine Learning",
+    "question": "What is a training dataset?",
+    "answer": "A training dataset is a labeled dataset used to fit (train) a machine learning model. The model learns patterns from this data. It is separate from the validation dataset (used for hyperparameter tuning) and the test dataset (used for final evaluation of model performance on unseen data)."
+  },
+  {
+    "id": 31,
+    "category": "Linux",
+    "question": "What is Linux?",
+    "answer": "Linux is a free, open-source operating system kernel created by Linus Torvalds in 1991. Combined with GNU tools, it forms a complete OS. Linux powers Android smartphones, web servers, supercomputers, and embedded devices. Its open-source nature means anyone can view, modify, and distribute it."
+  },
+  {
+    "id": 32,
+    "category": "Linux",
+    "question": "What is a Linux distribution?",
+    "answer": "A Linux distribution (distro) is a complete operating system built around the Linux kernel, bundled with software, a package manager, and desktop environment. Popular distros include Ubuntu (beginner-friendly), CentOS/RHEL (enterprise servers), Fedora (cutting-edge features), Debian (stable), and Arch Linux (advanced)."
+  },
+  {
+    "id": 33,
+    "category": "Linux",
+    "question": "What is the Linux terminal?",
+    "answer": "The terminal (command line interface) is a text-based way to interact with your Linux system. You type commands to run programs, manage files, install software, and configure settings. Common terminals include Bash, Zsh, and Fish. It is more powerful and efficient than a graphical interface for many tasks."
+  },
+  {
+    "id": 34,
+    "category": "Linux",
+    "question": "What is sudo in Linux?",
+    "answer": "sudo (superuser do) allows permitted users to run commands with root (administrator) privileges without logging in as root. It provides security by requiring your own password and logging all privileged commands. Example: sudo apt install nginx runs the installation with root privileges."
+  },
+  {
+    "id": 35,
+    "category": "Linux",
+    "question": "How do I list files in Linux?",
+    "answer": "Use the ls command to list files. Key options: ls (basic listing), ls -l (detailed with permissions, size, date), ls -a (show hidden files starting with .), ls -la (detailed including hidden), ls -lh (human-readable file sizes). Use ls /path/to/directory to list a specific directory."
+  },
+  {
+    "id": 36,
+    "category": "Linux",
+    "question": "What is chmod in Linux?",
+    "answer": "chmod (change mode) changes file/directory permissions. Permissions have three groups: owner, group, others. Each can have read (r=4), write (w=2), execute (x=1) permissions. Example: chmod 755 script.sh gives owner full access (7=rwx), group and others read+execute (5=r-x). chmod +x adds execute permission."
+  },
+  {
+    "id": 37,
+    "category": "Linux",
+    "question": "What is grep in Linux?",
+    "answer": "grep (global regular expression print) searches for text patterns in files or command output. Common uses: grep 'error' logfile.txt (find lines containing 'error'), grep -i 'text' file (case-insensitive), grep -r 'pattern' /directory (recursive search), grep -n (show line numbers)."
+  },
+  {
+    "id": 38,
+    "category": "Linux",
+    "question": "What is SSH in Linux?",
+    "answer": "SSH (Secure Shell) is a cryptographic protocol for secure remote access to Linux servers over an unsecured network. It replaces insecure protocols like Telnet. Connect using: ssh username@server-ip. SSH keys (public/private key pairs) provide passwordless, more secure authentication than passwords."
+  },
+  {
+    "id": 39,
+    "category": "Linux",
+    "question": "What is a shell script?",
+    "answer": "A shell script is a text file containing a sequence of terminal commands that the shell executes in order. Scripts start with a shebang line like #!/bin/bash. They're used to automate repetitive tasks, system backups, batch file processing, and scheduled jobs via cron. Make executable with chmod +x script.sh."
+  },
+  {
+    "id": 40,
+    "category": "Linux",
+    "question": "What is the difference between apt and yum?",
+    "answer": "apt (Advanced Package Tool) is the package manager for Debian-based distros like Ubuntu and Debian. yum (Yellowdog Updater Modified) and its successor dnf are used in Red Hat-based systems like RHEL, CentOS, and Fedora. Both install, update, remove software packages and resolve dependencies automatically."
+  },
+  {
+    "id": 41,
+    "category": "Networking",
+    "question": "What is an IP address?",
+    "answer": "An IP (Internet Protocol) address is a unique numerical identifier assigned to each device on a network. IPv4 uses four numbers separated by dots (e.g., 192.168.1.1) with about 4.3 billion possible addresses. IPv6 uses hexadecimal notation to provide vastly more addresses for the expanding internet."
+  },
+  {
+    "id": 42,
+    "category": "Networking",
+    "question": "What is DNS?",
+    "answer": "DNS (Domain Name System) is like the internet's phone book. It translates human-readable domain names (like google.com) into IP addresses (like 142.250.80.46) that computers use to communicate. Without DNS, you would need to memorize IP addresses to visit websites."
+  },
+  {
+    "id": 43,
+    "category": "Networking",
+    "question": "What is HTTP?",
+    "answer": "HTTP (HyperText Transfer Protocol) is the foundation of data communication on the World Wide Web. It is a stateless, request-response protocol where browsers send HTTP requests to web servers, which respond with the requested content (HTML, images, etc.). HTTP operates on port 80 by default."
+  },
+  {
+    "id": 44,
+    "category": "Networking",
+    "question": "What is HTTPS?",
+    "answer": "HTTPS (HTTP Secure) is HTTP with encryption via SSL/TLS protocols. It ensures that data exchanged between your browser and the server is encrypted and cannot be intercepted. HTTPS operates on port 443 and is indicated by a padlock icon in your browser. It is essential for login pages, banking, and e-commerce."
+  },
+  {
+    "id": 45,
+    "category": "Networking",
+    "question": "What is a firewall in networking?",
+    "answer": "A firewall is a network security device (hardware or software) that monitors and filters incoming and outgoing network traffic based on predefined security rules. It creates a protective barrier between trusted internal networks and untrusted external networks like the internet, blocking unauthorized access."
+  },
+  {
+    "id": 46,
+    "category": "Networking",
+    "question": "What is a VPN?",
+    "answer": "A VPN (Virtual Private Network) creates a secure, encrypted connection (tunnel) between your device and a VPN server over the internet. It masks your real IP address, encrypts your traffic, and lets you bypass geographic restrictions. Used for privacy, security on public Wi-Fi, and remote work access."
+  },
+  {
+    "id": 47,
+    "category": "Networking",
+    "question": "What is TCP IP?",
+    "answer": "TCP/IP (Transmission Control Protocol / Internet Protocol) is the foundational protocol suite of the internet. IP handles addressing and routing data packets. TCP ensures reliable, ordered, error-checked delivery of those packets. Together they govern how data is sent, received, and verified across networks."
+  },
+  {
+    "id": 48,
+    "category": "Networking",
+    "question": "What is a subnet mask?",
+    "answer": "A subnet mask divides an IP address into a network portion and a host portion, enabling subnetting (splitting a network into smaller sub-networks). A common subnet mask is 255.255.255.0 (/24). Subnetting improves security, performance, and IP address management in large networks."
+  },
+  {
+    "id": 49,
+    "category": "Networking",
+    "question": "What is a MAC address?",
+    "answer": "A MAC (Media Access Control) address is a unique 48-bit hardware identifier burned into every Network Interface Card (NIC) by the manufacturer. Written as six pairs of hex digits (e.g., 00:1A:2B:3C:4D:5E), it identifies devices at the data link layer within a local network (LAN)."
+  },
+  {
+    "id": 50,
+    "category": "Networking",
+    "question": "What is network bandwidth?",
+    "answer": "Bandwidth is the maximum data transfer rate of a network connection, measured in bits per second (bps, Kbps, Mbps, Gbps). Higher bandwidth means more data can be transmitted in a given time. Bandwidth is different from latency — bandwidth is capacity, while latency is the time delay for data to travel."
+  },
+  {
+    "id": 51,
+    "category": "Cybersecurity",
+    "question": "What is cybersecurity?",
+    "answer": "Cybersecurity is the practice of protecting computers, servers, networks, and data from digital attacks, theft, and damage. It encompasses technologies, processes, and practices including access control, encryption, threat detection, incident response, and security awareness training."
+  },
+  {
+    "id": 52,
+    "category": "Cybersecurity",
+    "question": "What is phishing?",
+    "answer": "Phishing is a social engineering attack where cybercriminals send deceptive emails, messages, or create fake websites impersonating legitimate organizations. The goal is to trick victims into revealing sensitive information like passwords, credit card numbers, or to install malware. Spear phishing targets specific individuals."
+  },
+  {
+    "id": 53,
+    "category": "Cybersecurity",
+    "question": "What is encryption in cybersecurity?",
+    "answer": "Encryption converts readable data (plaintext) into an unreadable format (ciphertext) using an algorithm and encryption key. Only authorized parties with the correct decryption key can read the data. Common algorithms include AES (symmetric), RSA (asymmetric), and TLS for securing internet connections."
+  },
+  {
+    "id": 54,
+    "category": "Cybersecurity",
+    "question": "What is two factor authentication 2FA?",
+    "answer": "Two-factor authentication (2FA) adds a second verification step beyond just a password. It combines something you know (password), something you have (OTP from phone/app), or something you are (fingerprint/face). Even if your password is stolen, attackers cannot access your account without the second factor."
+  },
+  {
+    "id": 55,
+    "category": "Cybersecurity",
+    "question": "What is malware?",
+    "answer": "Malware (malicious software) is any software intentionally designed to harm computer systems, steal data, or gain unauthorized access. Types include: viruses (spread by infecting files), worms (self-replicating), trojans (disguised as legitimate software), ransomware (encrypts files for ransom), and spyware (covert surveillance)."
+  },
+  {
+    "id": 56,
+    "category": "Cybersecurity",
+    "question": "What is a DDoS attack?",
+    "answer": "A DDoS (Distributed Denial of Service) attack overwhelms a server, service, or network with massive internet traffic from thousands of compromised machines (botnet), making it unavailable to legitimate users. Unlike DoS (single source), DDoS uses distributed sources making it harder to block."
+  },
+  {
+    "id": 57,
+    "category": "Cybersecurity",
+    "question": "What is SQL injection?",
+    "answer": "SQL injection is a web security vulnerability where attackers insert malicious SQL code into input fields (like login forms) that get executed by the database. This can allow attackers to bypass authentication, view/modify/delete database records, and even execute OS commands. Prevention: use parameterized queries and prepared statements."
+  },
+  {
+    "id": 58,
+    "category": "Cybersecurity",
+    "question": "What is penetration testing?",
+    "answer": "Penetration testing (pen testing / ethical hacking) is an authorized simulated cyberattack on a system to find and evaluate security vulnerabilities before real attackers do. Pen testers use the same tools and techniques as hackers but with permission. Popular tools include Metasploit, Nmap, Wireshark, and Burp Suite."
+  },
+  {
+    "id": 59,
+    "category": "Cybersecurity",
+    "question": "What is a zero day vulnerability?",
+    "answer": "A zero-day vulnerability is a software security flaw that is unknown to the software vendor and has no patch available. The term 'zero-day' means developers have had zero days to fix it. Attackers who discover zero-days can exploit them undetected. Zero-day exploits are extremely valuable on the black market."
+  },
+  {
+    "id": 60,
+    "category": "Cybersecurity",
+    "question": "What is ransomware?",
+    "answer": "Ransomware is malware that encrypts the victim's files and demands a ransom payment (usually cryptocurrency) in exchange for the decryption key. Notable attacks include WannaCry (2017) and NotPetya (2017), causing billions in damages. Prevention: regular backups, keeping software patched, and employee security training."
+  },
+  {
+    "category": "Python Programming",
+    "question": "What are Python generators and yield?",
+    "answer": "Generators are functions that return an iterator using the 'yield' keyword instead of 'return'. They generate values on the fly (lazy evaluation) rather than storing them in memory, making them highly memory-efficient for processing large datasets.",
+    "id": 61
+  },
+  {
+    "category": "Python Programming",
+    "question": "What is the difference between __str__ and __repr__ in Python?",
+    "answer": "__str__ is intended to provide a readable, user-friendly string representation of an object (for print() and str()). __repr__ is meant to provide an unambiguous, developer-focused representation that can ideally be used to recreate the object (for debugging/shell).",
+    "id": 62
+  },
+  {
+    "category": "Python Programming",
+    "question": "What is the Global Interpreter Lock (GIL) in Python?",
+    "answer": "The GIL is a mutex in CPython (the default Python implementation) that prevents multiple native threads from executing Python bytecodes at once. This means CPU-bound multi-threaded Python programs do not run in true parallel on multi-core systems. Multiprocessing is used to bypass it.",
+    "id": 63
+  },
+  {
+    "category": "Python Programming",
+    "question": "What is async/await in Python?",
+    "answer": "async/await is Python's syntax for writing asynchronous, concurrent code using coroutines. It allows programs to perform non-blocking I/O operations (like fetching web pages or querying databases) efficiently without using threads, managed by an event loop (asyncio).",
+    "id": 64
+  },
+  {
+    "category": "Python Programming",
+    "question": "What is the difference between deepcopy and copy in Python?",
+    "answer": "A shallow copy (copy.copy()) constructs a new compound object and inserts references to the original object's items. A deep copy (copy.deepcopy()) constructs a new compound object and recursively inserts copies of the items found in the original, avoiding reference sharing.",
+    "id": 65
+  },
+  {
+    "category": "Python Programming",
+    "question": "How does memory management work in Python?",
+    "answer": "Python manages memory automatically via private heap space, where all objects and data structures reside. It uses a built-in garbage collector that relies on reference counting (deallocating objects with zero references) and a cyclic garbage collector to detect and clean up reference cycles.",
+    "id": 66
+  },
+  {
+    "category": "Python Programming",
+    "question": "What are context managers and the 'with' statement?",
+    "answer": "Context managers allow you to allocate and release resources precisely when wanted, using the 'with' statement. They implement '__enter__' and '__exit__' methods. The most common use case is opening files, ensuring they are closed automatically even if errors occur.",
+    "id": 67
+  },
+  {
+    "category": "Python Programming",
+    "question": "What is the difference between *args and **kwargs?",
+    "answer": "*args allows a function to accept any number of positional arguments as a tuple, while **kwargs allows a function to accept any number of keyword (named) arguments as a dictionary. They make functions highly flexible.",
+    "id": 68
+  },
+  {
+    "category": "Python Programming",
+    "question": "What are dataclasses in Python?",
+    "answer": "Dataclasses (introduced in Python 3.7 via the @dataclass decorator) automate the generation of boilerplate methods like __init__(), __repr__(), and __eq__() for classes that primarily exist to store data. They make code cleaner and easier to maintain.",
+    "id": 69
+  },
+  {
+    "category": "Python Programming",
+    "question": "What are type hints in Python?",
+    "answer": "Type hints are a formal syntax for specifying the expected data types of variables, function parameters, and return values. They do not affect runtime behavior (Python remains dynamically typed) but help static type checkers (like mypy) and IDEs detect bugs early.",
+    "id": 70
+  },
+  {
+    "category": "Python Programming",
+    "question": "What is dynamic typing in Python?",
+    "answer": "Dynamic typing means variables in Python are not bound to a specific data type. A variable's type is determined at runtime based on the value it currently holds, and you can reassign a variable to a different type at any time. Example: x = 5; x = 'hello' is valid.",
+    "id": 71
+  },
+  {
+    "category": "Python Programming",
+    "question": "What are docstrings in Python?",
+    "answer": "Docstrings (documentation strings) are string literals that appear right after the definition of a function, class, or module. They are used to document code and can be accessed at runtime using the __doc__ attribute or the help() function. They are written in triple quotes.",
+    "id": 72
+  },
+  {
+    "category": "Python Programming",
+    "question": "What are namespaces and scope in Python?",
+    "answer": "A namespace is a system that ensures all names in a program are unique and can be resolved without conflict (e.g., local, global, built-in). Scope refers to the region of a program where a namespace is directly accessible, following the LEGB rule (Local, Enclosing, Global, Built-in).",
+    "id": 73
+  },
+  {
+    "category": "Python Programming",
+    "question": "What is recursion in Python?",
+    "answer": "Recursion is a programming technique where a function calls itself to solve a smaller instance of the same problem. A recursive function must have a base case to terminate execution, otherwise it will run indefinitely and raise a RecursionError (stack overflow).",
+    "id": 74
+  },
+  {
+    "category": "Python Programming",
+    "question": "What is the difference between 'is' and '==' in Python?",
+    "answer": "'==' is the equality operator, checking if two objects have the same value. 'is' is the identity operator, checking if two variables point to the exact same object in memory (i.e., they share the same memory address, verified with id()).",
+    "id": 75
+  },
+  {
+    "category": "Cloud Computing",
+    "question": "What is high availability in cloud computing?",
+    "answer": "High availability (HA) refers to a system design protocol that ensures a high level of operational performance and uptime, typically 99.9% ('three nines') or higher. It is achieved through redundancy, failover clustering, load balancing, and multi-region deployment.",
+    "id": 76
+  },
+  {
+    "category": "Cloud Computing",
+    "question": "What is autoscaling?",
+    "answer": "Autoscaling is a cloud computing feature that automatically adjusts the volume of computational resources (like virtual machines or container instances) allocated to an application based on real-time load, traffic, or resource utilization (CPU, memory).",
+    "id": 77
+  },
+  {
+    "category": "Cloud Computing",
+    "question": "What is a Content Delivery Network (CDN)?",
+    "answer": "A CDN is a geographically distributed network of proxy servers and data centers. It caches static content (images, videos, HTML) closer to users' physical locations to reduce latency, speed up page load times, and offload bandwidth consumption from origin servers.",
+    "id": 78
+  },
+  {
+    "category": "Cloud Computing",
+    "question": "What is cloud storage?",
+    "answer": "Cloud storage is a model where data is maintained, managed, backed up, and made available to users over the internet. Common types include object storage (AWS S3, Google Cloud Storage), block storage (AWS EBS), and file storage (AWS EFS).",
+    "id": 79
+  },
+  {
+    "category": "Cloud Computing",
+    "question": "What is the Shared Responsibility Model?",
+    "answer": "The Shared Responsibility Model dictates that cloud security is a partnership. The cloud provider is responsible for securing the physical infrastructure, virtualization layer, and hardware ('security of the cloud'), while the customer is responsible for securing their data, OS, apps, and access controls ('security in the cloud').",
+    "id": 80
+  },
+  {
+    "category": "Cloud Computing",
+    "question": "What is a microservices architecture?",
+    "answer": "Microservices is an architectural style where an application is structured as a collection of small, loosely coupled, independently deployable services. Each service handles a specific business capability and communicates via lightweight APIs, facilitating scaling and agility.",
+    "id": 81
+  },
+  {
+    "category": "Cloud Computing",
+    "question": "What is Infrastructure as Code (IaC)?",
+    "answer": "IaC is the practice of managing and provisioning IT infrastructure (servers, networks, databases) using machine-readable configuration files or code rather than manual processes. Tools like Terraform, Ansible, and CloudFormation enable version-controlled infrastructure deployment.",
+    "id": 82
+  },
+  {
+    "category": "Cloud Computing",
+    "question": "What is a cloud load balancer?",
+    "answer": "A cloud load balancer automatically distributes incoming application traffic across multiple target servers, containers, or IP addresses. This ensures reliability, prevents any single resource from becoming overloaded, and enables seamless scaling.",
+    "id": 83
+  },
+  {
+    "category": "Cloud Computing",
+    "question": "What is multi-tenancy in cloud computing?",
+    "answer": "Multi-tenancy is an architecture where a single instance of a software application (and its underlying hardware) serves multiple customers (tenants). Each tenant's data is isolated and invisible to others, maximizing resource utilization and reducing costs.",
+    "id": 84
+  },
+  {
+    "category": "Cloud Computing",
+    "question": "What is edge computing?",
+    "answer": "Edge computing is a distributed computing paradigm that brings computation and data storage closer to the physical location of the user or data source (the 'edge' of the network). This reduces latency, saves bandwidth, and enables real-time data processing.",
+    "id": 85
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is reinforcement learning?",
+    "answer": "Reinforcement learning (RL) is an ML paradigm where an autonomous agent learns to make decisions by performing actions in an environment to maximize cumulative reward. It learns through trial-and-error feedback (rewards and penalties) rather than labeled training data.",
+    "id": 86
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is a Generative Adversarial Network (GAN)?",
+    "answer": "A GAN is a deep learning architecture consisting of two neural networks: a Generator (which creates fake data/images) and a Discriminator (which evaluates them against real data). They compete in a game-theoretic loop, training the generator to create highly realistic data.",
+    "id": 87
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is a Transformer model in AI?",
+    "answer": "A Transformer is a deep learning architecture introduced in 2017 that relies on the 'attention mechanism' to process input data sequentially. Unlike RNNs, it can process entire sequences in parallel, making it highly efficient. It forms the backbone of modern LLMs like GPT.",
+    "id": 88
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What are Large Language Models (LLMs)?",
+    "answer": "LLMs are massive artificial neural networks (often with billions of parameters) trained on vast amounts of text data. They can understand, summarize, translate, predict, and generate natural human language. Examples include OpenAI's GPT, Google's Gemini, and Meta's Llama.",
+    "id": 89
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is computer vision?",
+    "answer": "Computer vision is a field of AI that enables computers and systems to derive meaningful information from digital images, videos, and other visual inputs, and take actions or make recommendations based on that information. It powers facial recognition, object detection, and autonomous driving.",
+    "id": 90
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is feature engineering in ML?",
+    "answer": "Feature engineering is the process of selecting, transforming, combining, and creating raw data attributes into predictive features that help machine learning algorithms train more effectively and make more accurate predictions.",
+    "id": 91
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is a confusion matrix?",
+    "answer": "A confusion matrix is a table layout used to evaluate the performance of a classification model. It summarizes the correct and incorrect predictions broken down by class, displaying True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN).",
+    "id": 92
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is the difference between precision and recall?",
+    "answer": "Precision is the ratio of true positive predictions to all positive predictions made by the model (TP / (TP + FP)). Recall is the ratio of true positive predictions to all actual positive cases (TP / (TP + FN)). Precision focuses on accuracy of positives, while recall focuses on capturing all positives.",
+    "id": 93
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is a Random Forest algorithm?",
+    "answer": "Random Forest is an ensemble machine learning algorithm used for classification and regression. It constructs a multitude of decision trees during training and outputs the class that is the mode of classes (classification) or mean prediction (regression) of individual trees, reducing overfitting.",
+    "id": 94
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is gradient descent?",
+    "answer": "Gradient descent is an optimization algorithm used to minimize a model's loss function by iteratively moving in the direction of steepest descent (defined by the negative gradient). It updates the model parameters (weights) to find the minimum of the error surface.",
+    "id": 95
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is cross-validation?",
+    "answer": "Cross-validation is a resampling technique used to evaluate machine learning models on a limited data sample. The dataset is split into multiple folds; the model is trained on some folds and tested on the remaining fold, rotating until all folds are tested. This provides a more robust performance estimate.",
+    "id": 96
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is clustering in machine learning?",
+    "answer": "Clustering is an unsupervised machine learning task where data points are grouped into clusters based on similarity. Points in the same cluster are more similar to each other than to points in other clusters. Common algorithms include K-Means, DBSCAN, and hierarchical clustering.",
+    "id": 97
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is natural language generation (NLG)?",
+    "answer": "NLG is a subfield of artificial intelligence and NLP that focuses on generating coherent, contextually appropriate human language text from non-linguistic data or structured prompts. It is the writing component of conversational AI.",
+    "id": 98
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is a loss function in AI?",
+    "answer": "A loss function (or cost function) is a mathematical function that measures the discrepancy between a model's predicted output and the actual true target value. Optimization algorithms work to minimize this loss during model training. Examples: Mean Squared Error (MSE), Cross-Entropy Loss.",
+    "id": 99
+  },
+  {
+    "category": "AI and Machine Learning",
+    "question": "What is backpropagation?",
+    "answer": "Backpropagation (backward propagation of errors) is the primary algorithm used to train artificial neural networks. It calculates the gradient of the loss function with respect to each weight by the chain rule, propagating errors backward from the output layer to adjust weights and minimize loss.",
+    "id": 100
+  },
+  {
+    "category": "Linux",
+    "question": "What is a cron job in Linux?",
+    "answer": "A cron job is a time-based job scheduler in Unix-like operating systems. It enables users to schedule commands, shell scripts, or system tasks to run automatically at specific times, dates, or intervals. Scheduled tasks are configured in 'crontab' files.",
+    "id": 101
+  },
+  {
+    "category": "Linux",
+    "question": "What is systemd?",
+    "answer": "systemd is an init system and system manager that has become the standard for major Linux distributions. It is the first process to start (PID 1) and is responsible for bootstrapping the user space, managing system services, mount points, device states, and system logs (via journald).",
+    "id": 102
+  },
+  {
+    "category": "Linux",
+    "question": "How do you manage processes in Linux?",
+    "answer": "Processes can be monitored using 'ps', 'top', or 'htop'. You can stop or terminate processes using 'kill' followed by the process ID (PID), or 'pkill'/'killall' by name. Processes can be run in the background by appending '&', and managed with 'bg', 'fg', and 'jobs'.",
+    "id": 103
+  },
+  {
+    "category": "Linux",
+    "question": "What are environment variables in Linux?",
+    "answer": "Environment variables are dynamic, system-wide values stored in the shell that affect the behavior of running processes (e.g., PATH, USER, HOME). You can view them using 'printenv' or 'env', set them temporarily using 'EXPORT VAR=value', or permanently in shell config files like .bashrc.",
+    "id": 104
+  },
+  {
+    "category": "Linux",
+    "question": "What is the difference between a hard link and a soft link?",
+    "answer": "A hard link is an additional pointer to the same physical inode (file data) on the disk; deleting the original file does not affect the hard link. A soft link (symbolic link or symlink) is a shortcut that points to the original file path; deleting the original breaks the symlink.",
+    "id": 105
+  },
+  {
+    "category": "Linux",
+    "question": "How do you check disk usage in Linux?",
+    "answer": "Use 'df' (disk free) to view available disk space on mounted file systems (e.g., 'df -h' for human-readable format). Use 'du' (disk usage) to check the size of specific directories and files (e.g., 'du -sh *' for summary of current directory contents).",
+    "id": 106
+  },
+  {
+    "category": "Linux",
+    "question": "What is the pipe operator (|) in Linux?",
+    "answer": "The pipe operator (|) redirects the standard output (stdout) of one command to serve as the standard input (stdin) of the next command. This allows you to chain commands together to perform complex text processing. Example: 'cat file.txt | grep error | wc -l'.",
+    "id": 107
+  },
+  {
+    "category": "Linux",
+    "question": "What is redirecting output in Linux?",
+    "answer": "Output redirection allows you to send standard output or error of a command to a file. Use '>' to overwrite a file (e.g., 'echo hello > file.txt'), '>>' to append to a file (e.g., 'echo world >> file.txt'), and '2>' to redirect standard error (stderr).",
+    "id": 108
+  },
+  {
+    "category": "Linux",
+    "question": "What is the difference between find and locate?",
+    "answer": "'find' searches the filesystem in real-time based on criteria like name, size, type, or modification date; it is thorough but can be slow. 'locate' queries a pre-built database (updated periodically by updatedb); it is extremely fast but might not find very recently created files.",
+    "id": 109
+  },
+  {
+    "category": "Linux",
+    "question": "What are tar and gzip?",
+    "answer": "'tar' (tape archive) is used to combine multiple files and directories into a single archive file (a .tar file, often called a tarball) without compression. 'gzip' is a utility used to compress files. They are commonly combined to create compressed '.tar.gz' or '.tgz' archives.",
+    "id": 110
+  },
+  {
+    "category": "Networking",
+    "question": "What is DHCP in networking?",
+    "answer": "DHCP (Dynamic Host Configuration Protocol) is a network management protocol used to automatically assign IP addresses, subnet masks, default gateways, and DNS server details to devices joining a network, eliminating manual network configuration.",
+    "id": 111
+  },
+  {
+    "category": "Networking",
+    "question": "What is NAT (Network Address Translation)?",
+    "answer": "NAT is a method of mapping an entire private network of local IP addresses to a single public IP address before transferring packets to the internet. This conserves public IPv4 addresses and adds a layer of security by hiding internal IP structures.",
+    "id": 112
+  },
+  {
+    "category": "Networking",
+    "question": "What is a proxy server?",
+    "answer": "A proxy server acts as an intermediary gateway between a client machine and the internet. It receives client requests, forwards them to target servers, retrieves responses, and returns them to the client, providing security, privacy (masking IP), filtering, or caching benefits.",
+    "id": 113
+  },
+  {
+    "category": "Networking",
+    "question": "What is the OSI model?",
+    "answer": "The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes network communications into 7 layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application. It helps developers understand how protocols interact.",
+    "id": 114
+  },
+  {
+    "category": "Networking",
+    "question": "What is the difference between ping and traceroute?",
+    "answer": "'ping' checks the basic connectivity and latency between your device and a target host using ICMP Echo requests. 'traceroute' (or tracert in Windows) maps the exact path data packets take to reach the target, listing every intermediary router (hop) and response times.",
+    "id": 115
+  },
+  {
+    "category": "Networking",
+    "question": "What is a WebSocket?",
+    "answer": "WebSocket is a computer communications protocol providing full-duplex (two-way), persistent communication channels over a single TCP connection. Unlike HTTP request-response, WebSockets allow real-time server-push communication, widely used in chat apps and live feeds.",
+    "id": 116
+  },
+  {
+    "category": "Networking",
+    "question": "What is the difference between TCP and UDP?",
+    "answer": "TCP (Transmission Control Protocol) is connection-oriented, offering reliable, ordered, and error-checked data delivery, making it ideal for web traffic and email. UDP (User Datagram Protocol) is connectionless, prioritizing speed and low overhead over reliability, used in gaming, streaming, and DNS.",
+    "id": 117
+  },
+  {
+    "category": "Networking",
+    "question": "What is an IPv6 address?",
+    "answer": "IPv6 is the latest version of the Internet Protocol, designed to replace IPv4. It uses 128-bit addresses represented as eight groups of hexadecimal digits separated by colons (e.g., 2001:db8::ff00:42:8329), providing a virtually infinite pool of unique network addresses.",
+    "id": 118
+  },
+  {
+    "category": "Networking",
+    "question": "What is a router vs a switch?",
+    "answer": "A switch connects multiple devices together within the same local area network (LAN) and routes traffic using MAC addresses (Layer 2). A router connects multiple networks together (like your home LAN to the internet) and routes traffic using IP addresses (Layer 3).",
+    "id": 119
+  },
+  {
+    "category": "Networking",
+    "question": "What is network latency?",
+    "answer": "Latency is the time delay for a data packet to travel from its source to its destination across a network, typically measured in milliseconds (ms). High latency can cause lag in real-time applications, and is influenced by distance, transmission medium, and network congestion.",
+    "id": 120
+  },
+  {
+    "category": "Cybersecurity",
+    "question": "What is the OWASP Top 10?",
+    "answer": "The OWASP Top 10 is a regularly updated report outlining the ten most critical security risks facing web applications today. Published by the Open Web Application Security Project, it includes vulnerabilities like Broken Access Control, Cryptographic Failures, and SQL Injection.",
+    "id": 121
+  },
+  {
+    "category": "Cybersecurity",
+    "question": "What is Cross-Site Scripting (XSS)?",
+    "answer": "XSS is a security vulnerability where an attacker injects malicious scripts (usually JavaScript) into web pages viewed by other users. When the victim's browser executes the script, it can steal cookies, session tokens, or deface websites. Mitigation: input sanitization and output encoding.",
+    "id": 122
+  },
+  {
+    "category": "Cybersecurity",
+    "question": "What is Cross-Site Request Forgery (CSRF)?",
+    "answer": "CSRF is an attack that forces an authenticated user's web browser to execute unwanted administrative actions on a web application where they are currently logged in. Prevention: use anti-CSRF tokens (unique, unpredictable tokens validated with every state-changing request).",
+    "id": 123
+  },
+  {
+    "category": "Cybersecurity",
+    "question": "What is a Security Operations Center (SOC)?",
+    "answer": "A SOC is a centralized unit within an organization that employs people, processes, and technology to continuously monitor, analyze, and improve an organization's security posture, defending against cyber threats and responding to incidents in real-time.",
+    "id": 124
+  },
+  {
+    "category": "Cybersecurity",
+    "question": "What is SIEM in cybersecurity?",
+    "answer": "SIEM (Security Information and Event Management) is a security software solution that aggregates log data, security events, and alerts from various systems (servers, firewalls, network devices) across an enterprise to provide real-time monitoring, correlation, and threat detection.",
+    "id": 125
+  },
+  {
+    "category": "Cybersecurity",
+    "question": "What is Zero Trust Architecture?",
+    "answer": "Zero Trust is a security framework based on the premise 'never trust, always verify'. It assumes that threats exist both outside and inside the network boundary. It requires continuous authentication, authorization, and validation of all users and devices before granting access.",
+    "id": 126
+  },
+  {
+    "category": "Cybersecurity",
+    "question": "What is an Intrusion Detection System (IDS)?",
+    "answer": "An IDS is a security application or device that monitors network traffic or system activity for malicious actions or policy violations. It generates alerts when anomalies are found. An IPS (Intrusion Prevention System) goes a step further and blocks the malicious activity automatically.",
+    "id": 127
+  },
+  {
+    "category": "Cybersecurity",
+    "question": "What is a brute force attack?",
+    "answer": "A brute force attack is a trial-and-error method used by hackers to decrypt data, crack passwords, or find hidden web pages. Attackers use automated tools to try millions of character combinations or dictionary words in rapid succession until they find the correct one.",
+    "id": 128
+  },
+  {
+    "category": "Cybersecurity",
+    "question": "What is encryption key management?",
+    "answer": "Key management refers to the administration of cryptographic keys throughout their entire lifecycle: generation, storage, distribution, rotation, destruction, and backup. Proper key management is crucial, as the security of encrypted data depends entirely on key secrecy.",
+    "id": 129
+  },
+  {
+    "category": "Cybersecurity",
+    "question": "What is social engineering?",
+    "answer": "Social engineering is a broad range of malicious activities accomplished through human interaction. It uses psychological manipulation to trick users into making security mistakes, giving away confidential information, or installing malicious software (e.g., phishing, baiting, pretexting).",
+    "id": 130
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is a relational database?",
+    "answer": "A relational database (RDBMS) is a type of database that stores data in tables consisting of rows and columns, structured according to a schema. Tables are linked to each other using relationships (keys). Examples include PostgreSQL, MySQL, SQLite, and Microsoft SQL Server.",
+    "id": 131
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is SQL?",
+    "answer": "SQL (Structured Query Language) is the standard programming language used to communicate with, manage, query, and manipulate relational databases. Standard operations include SELECT (retrieve data), INSERT (add data), UPDATE (edit data), and DELETE (remove data).",
+    "id": 132
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is the difference between SQL and NoSQL?",
+    "answer": "SQL databases are relational, schema-based, table-structured, and support complex queries and ACID transactions, scaling vertically. NoSQL databases are non-relational, schema-less, use document/key-value/graph models, scale horizontally, and are optimized for unstructured, high-volume data.",
+    "id": 133
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is a primary key in a database?",
+    "answer": "A primary key is a column or set of columns in a table that uniquely identifies each row in that table. Primary key values must be unique and cannot contain NULL values. Only one primary key can exist per database table.",
+    "id": 134
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is a foreign key in a database?",
+    "answer": "A foreign key is a column or set of columns in one table that references the primary key of another table. It establishes a link between the data in two tables, enforcing referential integrity by ensuring that referenced values must exist.",
+    "id": 135
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is a database index?",
+    "answer": "A database index is a data structure (often a B-Tree) created on table columns to speed up data retrieval operations. It works like a book index, allowing the database engine to find rows quickly without scanning the entire table. However, indexes slow down write operations (INSERT/UPDATE).",
+    "id": 136
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is a JOIN in SQL?",
+    "answer": "A JOIN clause is used to combine rows from two or more tables based on a related column between them. It allows you to query data spread across multiple normalized tables as a single result set.",
+    "id": 137
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+    "answer": "An INNER JOIN returns only the rows that have matching values in both tables. A LEFT JOIN (or LEFT OUTER JOIN) returns all rows from the left table, and the matched rows from the right table; if no match is found, NULL values are returned for the columns of the right table.",
+    "id": 138
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is database normalization?",
+    "answer": "Database normalization is the process of organizing columns and tables in a database to reduce data redundancy (duplicate data) and improve data integrity. It involves dividing large tables into smaller ones and defining relationships, following Normal Forms (1NF, 2NF, 3NF).",
+    "id": 139
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is a database transaction?",
+    "answer": "A transaction is a sequence of one or more SQL operations executed as a single logical unit of work. A transaction must execute completely or not at all; if any operation fails, the database is rolled back to its state prior to the transaction, ensuring consistency.",
+    "id": 140
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What does ACID stand for in databases?",
+    "answer": "ACID is a set of properties that guarantee database transactions are processed reliably: Atomicity (all or nothing), Consistency (preserves database rules), Isolation (transactions execute independently), and Durability (committed data survives system failures).",
+    "id": 141
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is a database view?",
+    "answer": "A view is a virtual table in a database whose contents are defined by an SQL query. It does not store physical data itself; instead, it provides a dynamic window to data stored in real tables, simplifying complex queries and adding a layer of security.",
+    "id": 142
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is a stored procedure?",
+    "answer": "A stored procedure is a prepared SQL code block that you can save and reuse. It is stored directly in the database engine and can accept input parameters, perform conditional logic, modify data, and return results, improving performance by reducing network traffic.",
+    "id": 143
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is MongoDB?",
+    "answer": "MongoDB is a popular open-source, non-relational, document-oriented NoSQL database. It stores data in flexible, JSON-like documents (called BSON) rather than tables. It is designed for horizontal scaling, high availability, and rapid development.",
+    "id": 144
+  },
+  {
+    "category": "Database & SQL",
+    "question": "What is database replication?",
+    "answer": "Database replication is the technique of copying and maintaining database data across multiple servers (replicas). This ensures high availability (failover support), increases read throughput by distributing queries, and provides data redundancy for disaster recovery.",
+    "id": 145
+  },
+  {
+    "category": "Web Development",
+    "question": "What is HTML?",
+    "answer": "HTML (HyperText Markup Language) is the standard markup language used to create the structure of web pages. It uses tags (like <div>, <h1>, <p>) to define elements such as headings, paragraphs, links, and images, which are interpreted by web browsers.",
+    "id": 146
+  },
+  {
+    "category": "Web Development",
+    "question": "What is CSS?",
+    "answer": "CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation and layout of HTML documents. It controls colors, fonts, margins, layouts, responsive scaling, and animations, separating content structure from visual design.",
+    "id": 147
+  },
+  {
+    "category": "Web Development",
+    "question": "What is JavaScript?",
+    "answer": "JavaScript is a lightweight, interpreted programming language with first-class functions. It is best known as the scripting language for web pages, allowing developers to add dynamic interactivity, handle events, fetch data, and update content in real-time.",
+    "id": 148
+  },
+  {
+    "category": "Web Development",
+    "question": "What is the DOM (Document Object Model)?",
+    "answer": "The DOM is a programming interface for web documents. It represents the HTML structure of a page as a hierarchical tree of nodes. JavaScript uses the DOM API to dynamically access, modify, add, or delete HTML elements and styles on the page.",
+    "id": 149
+  },
+  {
+    "category": "Web Development",
+    "question": "What is AJAX in web development?",
+    "answer": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques that allows web pages to send and retrieve data from a server asynchronously in the background. This enables a web page to update its content dynamically without reloading the entire page.",
+    "id": 150
+  },
+  {
+    "category": "Web Development",
+    "question": "What is a Single Page Application (SPA)?",
+    "answer": "An SPA is a web application or website that interacts with the user by dynamically rewriting the current web page with new data from the server, instead of loading entire new pages. This results in a fluid user experience similar to a desktop app. Examples: React, Vue, Angular.",
+    "id": 151
+  },
+  {
+    "category": "Web Development",
+    "question": "What is React in frontend development?",
+    "answer": "React is an open-source JavaScript library developed by Meta for building user interfaces, especially for single-page applications. It is component-based, uses a declarative approach, and features a Virtual DOM to optimize rendering performance by updating only changed elements.",
+    "id": 152
+  },
+  {
+    "category": "Web Development",
+    "question": "What is the difference between frontend and backend?",
+    "answer": "Frontend (client-side) refers to the parts of a web app users interact with directly, built using HTML, CSS, and JavaScript. Backend (server-side) refers to the behind-the-scenes server, database, and logic that powers the app, built using languages like Python, Node.js, or Go.",
+    "id": 153
+  },
+  {
+    "category": "Web Development",
+    "question": "What is an API?",
+    "answer": "An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate and exchange data with each other. It abstracts the underlying implementation, exposing only the endpoints needed for interaction.",
+    "id": 154
+  },
+  {
+    "category": "Web Development",
+    "question": "What is REST in web services?",
+    "answer": "REST (Representational State Transfer) is an architectural style for designing networked applications. It relies on a stateless, client-server protocol (usually HTTP) and utilizes standard HTTP methods (GET, POST, PUT, DELETE) to manage and manipulate resources identified by URLs.",
+    "id": 155
+  },
+  {
+    "category": "Web Development",
+    "question": "What is JSON?",
+    "answer": "JSON (JavaScript Object Notation) is a lightweight, text-based data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It represents data as key-value pairs and arrays, and is widely used for sending data in APIs.",
+    "id": 156
+  },
+  {
+    "category": "Web Development",
+    "question": "What is the difference between cookies, localStorage, and sessionStorage?",
+    "answer": "Cookies store small data (up to 4KB) sent with every HTTP request, used for sessions. localStorage stores data permanently (up to 5MB) on the browser until cleared manually. sessionStorage stores data for the duration of the page session (cleared when the browser tab is closed).",
+    "id": 157
+  },
+  {
+    "category": "Web Development",
+    "question": "What is CORS in web browsers?",
+    "answer": "CORS (Cross-Origin Resource Sharing) is a security mechanism enforced by web browsers. It uses HTTP headers to restrict web applications running at one origin (domain) from making requests to resources located at a different origin, preventing unauthorized cross-domain access.",
+    "id": 158
+  },
+  {
+    "category": "Web Development",
+    "question": "What is responsive web design?",
+    "answer": "Responsive web design is an approach to web development that makes web pages render well on a variety of devices, window sizes, and screen resolutions (mobile, tablet, desktop). It is achieved using fluid grids, flexible images, and CSS Media Queries.",
+    "id": 159
+  },
+  {
+    "category": "Web Development",
+    "question": "What is semantic HTML?",
+    "answer": "Semantic HTML is the use of HTML markup to reinforce the meaning and structure of the information on web pages, rather than just its presentation. Using elements like <header>, <nav>, <article>, and <footer> helps search engine web crawlers and screen readers parse the page.",
+    "id": 160
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is DevOps?",
+    "answer": "DevOps is a set of practices, cultural philosophies, and tools that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery of high-quality software.",
+    "id": 161
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is CI/CD?",
+    "answer": "CI/CD (Continuous Integration / Continuous Deployment or Delivery) is a set of practices that automates the software development lifecycle. CI automates building and testing code changes. CD automates deploying those tested changes to production environments.",
+    "id": 162
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is Continuous Integration (CI)?",
+    "answer": "Continuous Integration is a development practice where developers frequently merge their code changes into a central repository. Each merge triggers an automated build and test pipeline to detect and fix integration errors as early as possible.",
+    "id": 163
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is Continuous Deployment vs Continuous Delivery?",
+    "answer": "Continuous Delivery automates the release process up to the point where code is ready to go to production, requiring manual approval to deploy. Continuous Deployment automates the entire process, pushing every code change that passes the testing pipeline to production automatically.",
+    "id": 164
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is Jenkins?",
+    "answer": "Jenkins is an open-source, Java-based automation server used to build, test, and deploy software. It supports CI/CD by executing pipelines defined in a 'Jenkinsfile' and integrates with hundreds of tools in the development ecosystem.",
+    "id": 165
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is Terraform in DevOps?",
+    "answer": "Terraform is an open-source Infrastructure as Code (IaC) tool created by HashiCorp. It allows developers to define cloud and on-premise resources in human-readable configuration files (using HashiCorp Configuration Language - HCL) and manage infrastructure state declaratively.",
+    "id": 166
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is configuration management?",
+    "answer": "Configuration management is a systems engineering process for establishing and maintaining consistency of a product's performance, functional, and physical attributes. In DevOps, tools like Ansible, Puppet, and Chef automate system configuration on target servers.",
+    "id": 167
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is Ansible?",
+    "answer": "Ansible is an open-source IT automation tool that automates provisioning, configuration management, application deployment, and intra-service orchestration. It is agentless (runs over SSH/WinRM) and uses YAML files (called Playbooks) to describe automation tasks.",
+    "id": 168
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is infrastructure monitoring?",
+    "answer": "Infrastructure monitoring is the process of collecting, analyzing, and alerting on metrics (CPU, RAM, disk, network) from physical and virtual infrastructure components. It helps operations teams ensure system health, performance, and uptime.",
+    "id": 169
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is Prometheus in DevOps?",
+    "answer": "Prometheus is an open-source systems monitoring and alerting toolkit designed for reliability in dynamic container environments. It collects and stores metrics as time-series data (key-value pairs with timestamps) using a pull model over HTTP.",
+    "id": 170
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is Grafana?",
+    "answer": "Grafana is an open-source visualization and analytics software. It allows you to query, visualize, alert on, and understand metrics no matter where they are stored. It is commonly paired with Prometheus to create beautiful, real-time dashboards.",
+    "id": 171
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is GitOps?",
+    "answer": "GitOps is an operational framework that takes DevOps best practices used for application development, such as version control, collaboration, compliance, and CI/CD, and applies them to infrastructure automation (Git is the single source of truth).",
+    "id": 172
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is a deployment pipeline?",
+    "answer": "A deployment pipeline is a sequence of automated steps (build, test, deploy, verify) that code modifications undergo to progress from a developer's workspace to the production environment, ensuring repeatable and reliable releases.",
+    "id": 173
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is container orchestration in DevOps?",
+    "answer": "Container orchestration refers to the automation of the lifecycle of containers, including deployment, scaling, networking, load balancing, health monitoring, and scheduling across a cluster of servers. Kubernetes is the industry-standard orchestrator.",
+    "id": 174
+  },
+  {
+    "category": "DevOps & CI/CD",
+    "question": "What is a canary deployment?",
+    "answer": "Canary deployment is a software release strategy where a new version of an application is rolled out to a small subset of users first. If no issues or errors are detected, the update is gradually rolled out to the rest of the infrastructure.",
+    "id": 175
+  },
+  {
+    "category": "Git & Version Control",
+    "question": "What is Git?",
+    "answer": "Git is a free, open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It tracks changes made to files, allowing multiple developers to collaborate without overwriting each other's work.",
+    "id": 176
+  },
+  {
+    "category": "Git & Version Control",
+    "question": "What is GitHub?",
+    "answer": "GitHub is a cloud-based hosting service for Git repositories. It provides a web-based graphical interface, access control, and collaboration features such as pull requests, issue tracking, task management, and wikis for software development projects.",
+    "id": 177
+  },
+  {
+    "category": "Git & Version Control",
+    "question": "What is the difference between Git and GitHub?",
+    "answer": "Git is a local command-line tool used for version control (tracking code history). GitHub is an online service that hosts Git repositories in the cloud and provides collaboration features. Git runs locally, whereas GitHub is web-based.",
+    "id": 178
+  },
+  {
+    "category": "Git & Version Control",
+    "question": "What is a commit in Git?",
+    "answer": "A commit in Git is a snapshot of your project's files at a specific point in time. It records the changes made to the files in the repository and associates them with a unique cryptographic hash (SHA-1) and metadata like the author and timestamp.",
+    "id": 179
+  },
+  {
+    "category": "Git & Version Control",
+    "question": "What is a branch in Git?",
+    "answer": "A branch is an independent line of development in a Git repository. It allows developers to work on new features, bug fixes, or experiments without affecting the main codebase (often the 'main' or 'master' branch) until they are ready to merge.",
+    "id": 180
+  },
+  {
+    "category": "Git & Version Control",
+    "question": "What is a pull request?",
+    "answer": "A pull request (or merge request) is a proposal to merge changes from one branch into another in a hosted repository (like GitHub). It provides a forum for developers to review code, discuss changes, run automated tests, and resolve conflicts before merging.",
+    "id": 181
+  },
+  {
+    "category": "Git & Version Control",
+    "question": "What is a merge conflict in Git?",
+    "answer": "A merge conflict occurs when Git cannot automatically combine two sets of changes. This typically happens when two developers modify the same lines in the same file on different branches, and Git requires a human developer to manually resolve the differences.",
+    "id": 182
+  },
+  {
+    "category": "Git & Version Control",
+    "question": "What is git clone?",
+    "answer": "git clone is a command used to create a copy of an existing remote Git repository locally on your computer. It downloads all files, branches, commits, and history, automatically setting up a link (origin) back to the remote server.",
+    "id": 183
+  },
+  {
+    "category": "Git & Version Control",
+    "question": "What is git stash?",
+    "answer": "git stash temporarily shelves (stashes) changes you've made to your working directory so you can work on something else, and then come back and re-apply them later. This is useful for switching branches quickly without committing incomplete work.",
+    "id": 184
+  },
+  {
+    "category": "Git & Version Control",
+    "question": "What is the difference between git fetch and git pull?",
+    "answer": "git fetch downloads new commits, files, and refs from a remote repository to your local repository but does not modify your working files. git pull does a 'git fetch' followed immediately by a 'git merge' to bring your current local branch up-to-date.",
+    "id": 185
+  }
+]

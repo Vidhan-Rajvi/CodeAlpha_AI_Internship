@@ -1,0 +1,58 @@
+[
+  {
+    "role": "user",
+    "text": "Hello",
+    "timestamp": "12 Jun 2026, 12:27"
+  },
+  {
+    "role": "bot",
+    "text": "Hello! I am your AI FAQ Assistant. How can I help you today? You can ask me technical questions, search for topics using the search bar, or choose from the categories on the sidebar!",
+    "timestamp": "12 Jun 2026, 12:27",
+    "confidence": 100.0,
+    "category": "Small Talk",
+    "matched_question": "Greeting",
+    "suggestions": [
+      "What is artificial intelligence?",
+      "What is cloud computing?",
+      "What is cybersecurity?"
+    ],
+    "found": true,
+    "emoji": "👋"
+  },
+  {
+    "role": "user",
+    "text": "Hiii",
+    "timestamp": "12 Jun 2026, 14:15"
+  },
+  {
+    "role": "bot",
+    "text": "I couldn't find a precise answer to your question. Try rephrasing, check other categories, or select one of the suggested questions below.",
+    "timestamp": "12 Jun 2026, 14:15",
+    "confidence": 0.0,
+    "category": "",
+    "matched_question": "",
+    "suggestions": [],
+    "found": false,
+    "emoji": "🤔"
+  },
+  {
+    "role": "user",
+    "text": "Hello",
+    "timestamp": "12 Jun 2026, 14:15"
+  },
+  {
+    "role": "bot",
+    "text": "Hello! I am your AI FAQ Assistant. How can I help you today? You can ask me technical questions, search for topics using the search bar, or choose from the categories on the sidebar!",
+    "timestamp": "12 Jun 2026, 14:15",
+    "confidence": 100.0,
+    "category": "Small Talk",
+    "matched_question": "Greeting",
+    "suggestions": [
+      "What is artificial intelligence?",
+      "What is cloud computing?",
+      "What is cybersecurity?"
+    ],
+    "found": true,
+    "emoji": "👋"
+  }
+]
